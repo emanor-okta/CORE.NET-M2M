@@ -31,8 +31,8 @@ namespace NetCoreAPI
             })
             .AddJwtBearer(options =>
             {
-                options.Authority = "https://okta.oktamanor.com/oauth2/aus5qj9tdEkuA12S71d6";
-                options.Audience = "http://localhost:5000";
+                options.Authority = "https://{DOMAIN}/oauth2/{AUTH_SERVER}";
+                options.Audience = "{AUTH_SERVER_AUDIENCE}";
                 options.RequireHttpsMetadata = false;
             });
 
