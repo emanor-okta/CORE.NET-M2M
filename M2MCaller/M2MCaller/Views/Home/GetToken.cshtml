@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Current Okta Access Token";
+}
+
+<div class="text-center">
+    <h1 class="display4">@ViewData["Title"]</h1>
+
+    <p class="text-break">@ViewData["token"]</p>
+
+    <hr class="mt-3 mb-3"/>
+
+    <a asp-action="CallApi" class="btn btn-primary rounded-0">
+        Call Messages API with Access Token
+    </a>
+</div>

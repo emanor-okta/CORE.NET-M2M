@@ -1,0 +1,28 @@
+﻿@*
+    ViewData["Title"] = "API Call Results";
+*@
+@model IEnumerable<M2MCaller.Models.Message>
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+            </tr>
+        }
+     </tbody>
+</table>
