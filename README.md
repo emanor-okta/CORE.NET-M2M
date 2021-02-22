@@ -3,4 +3,4 @@ Okta Machine to Machine sample using the Client Credentials Flow.
 Project | Role
 ------------ | -------------
 [Resource Server](NetCoreAPI) | API Resource Server
-[Client](M2MCaller) | MVC Client
+[Client](M2MCaller) | API Client
